@@ -1,0 +1,333 @@
+::-moz-selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-webkit-selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+body {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft Yahei", "\5b8b\4f53", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #e0e0e0;
+}
+
+a {
+    color: #369;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border-bottom: 1px solid #359300;
+    box-shadow: 0 0 10px #000;
+    background: #70c722;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#94d52d), to(#65c31f));
+    background: -webkit-linear-gradient(top, #94d52d, #65c31f);
+    background: -moz-linear-gradient(top, #94d52d, #65c31f);
+    background: -ms-linear-gradient(top, #94d52d, #65c31f);
+    background: -o-linear-gradient(top, #94d52d, #65c31f);
+    background: linear-gradient(top, #94d52d, #65c31f);
+}
+
+nav ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    padding: 0 12px;
+}
+
+nav li:last-child a {
+    color: #111;
+    text-shadow: 0 1px 0px #ddd;
+}
+
+nav a:hover {
+    color: #f8f8f8;
+    background: #359300;
+}
+
+div {
+    width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    position: relative;
+    overflow:hidden;
+}
+
+section:before {
+    content: "\273d";
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    width: 800px;
+    top: 20px;
+}
+
+section:first-child:before {
+    display: none;
+}
+
+h2 {
+    font-family: "Microsoft Yahei", "\5b8b\4f53", Georgia, serif;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #fff;
+    margin: 0 0 0 -30px;
+    padding: 70px 0 0 0;
+    -webkit-transition: margin 300ms ease-in-out;
+    -moz-transition: margin 300ms ease-in-out;
+    -ms-transition: margin 300ms ease-in-out;
+    -o-transition: margin 300ms ease-in-out;
+    transition: margin 300ms ease-in-out;
+}
+
+.desktop h2:hover {
+    color: #369;
+    cursor: pointer;
+}
+
+.nojs h2,
+section:target h2 {
+    margin: 0;
+}
+
+.nojs section:first-child h2 {
+    padding: 30px 0 0 0;
+}
+
+h2:before {
+    content: "\21e8";
+    text-align: center;
+    width: 30px;
+    height: auto;
+    display: inline-block;
+}
+
+img {
+    width: 120px;
+    height: 180px;
+    padding: 4px;
+    border: 1px solid #369;
+    float: right;
+    margin-right: 20px;
+    background: #fff;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+p.print {
+    display: none;
+}
+
+span {
+    display: inline-block;
+    padding-right: 10px;
+    width: 140px;
+    font-weight: normal;
+}
+
+footer {
+    width: 800px;
+    margin: 40px auto 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer p:before {
+    content: "\ab\3000";
+}
+
+footer p:after {
+    content: "\3000\bb";
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* pad portrait */
+@media(max-width:850px) {
+    nav,
+    div,
+    section:before,
+    footer {
+        width: 100%;
+    }
+    nav ul,
+    article {
+        padding: 0 20px;
+    }
+    h2,
+    .nojs h2,
+    section:target h2 {
+        margin: 0 0 0 20px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+    h2:before {
+        display: none;
+    }
+}
+
+/* smartphone landscape */
+@media(max-width:650px) {
+    nav,
+    img {
+        display: none;
+    }
+    section:first-child h2 {
+        padding: 30px 0 0 0;
+    }
+}
+
+/* smartphone portrait */
+@media(max-width:450px) {
+    section:before {
+        display: none;
+    }
+    h2,
+    .nojs h2,
+    section:first-child h2,
+    .nojs section:first-child h2,
+    section:target h2 {
+        padding: 20px;
+        margin: 0;
+        background: #999;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#aaa), to(#888));
+        background: -webkit-linear-gradient(top, #aaa, #888);
+        background: -moz-linear-gradient(top, #aaa, #888);
+        background: -ms-linear-gradient(top, #aaa, #888);
+        background: -o-linear-gradient(top, #aaa, #888);
+        background: linear-gradient(top, #aaa, #888);
+        text-shadow: 0 1px 0 #ccc;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #555;
+    }
+    h2:after {
+        content: "\25bc";
+        float: right;
+        color: #444;
+    }
+    .mobile h2:after {
+        content: "\25c0";
+    }
+    .mobile section:target h2:after {
+        content: "\25bc";
+    }
+    .mobile article {
+        height: 0;
+        overflow: hidden;
+    }
+    .mobile section:target article {
+        height: auto;
+    }
+    p {
+        margin: 20px 0;
+    }
+    span {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #information span {
+        display: inline-block;
+        width: 90px;
+    }
+}
+
+/* smartphone */
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+}
+
+/* print */
+@media print {
+    * {
+        background: none;
+        color: #000;
+    }
+    nav,
+    img    {
+        display: none;
+    }
+    section h2,
+    .desktop section h2 {
+        margin: 0 0 0 20px;
+        text-shadow: none;
+    }
+    section:first-child h2,
+    .desktop section:first-child h2 {
+        padding: 20px 0 0;
+    }
+    section:first-child:before,
+    h2:before {
+        display: none;
+    }
+    .desktop h2:hover {
+        color: #000;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    a:after {
+        content: " [ " attr(href) " ] ";
+    }
+    a.print:after {
+        display: none;
+    }
+    p.screen {
+        display: none;
+    }
+    p.print {
+        display: block;
+    }
+}
