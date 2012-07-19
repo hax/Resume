@@ -1,9 +1,9 @@
-HTML resume framework
+HTML Resume Framework
 ---------------------
 
 **About this repo**
 
-+ A simple HTML resume framework, well displayed on Smart Phones and PC under various resolutions. Optimized for printers. Fork is welcome.
++ A simple HTML resume framework, well displayed on Smart Phones and PC under various resolutions. Optimized for printers.
 
 
 **Read the blog post**
